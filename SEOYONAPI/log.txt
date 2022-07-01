@@ -1,0 +1,184 @@
+﻿Time: 05-05-2022 11:07:26 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 219
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 05-05-2022 11:09:20 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 219
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 06-05-2022 11:16:09 AM
+-----------------------------------------------------------
+Message: Could not find file 'C:\Users\EMPULSE\source\repos\SEOYONAPI\SEOYONAPI\myobjects.json'.
+StackTrace:    at System.IO.FileStream.ValidateFileHandle(SafeFileHandle fileHandle)
+   at System.IO.FileStream.CreateFileOpenHandle(FileMode mode, FileShare share, FileOptions options)
+   at System.IO.FileStream..ctor(String path, FileMode mode, FileAccess access, FileShare share, Int32 bufferSize, FileOptions options)
+   at System.IO.StreamReader.ValidateArgsAndOpenPath(String path, Encoding encoding, Int32 bufferSize)
+   at System.IO.StreamReader..ctor(String path, Encoding encoding, Boolean detectEncodingFromByteOrderMarks)
+   at System.IO.File.InternalReadAllText(String path, Encoding encoding)
+   at System.IO.File.ReadAllText(String path)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 182
+Source: System.Private.CoreLib
+TargetSite: Microsoft.Win32.SafeHandles.SafeFileHandle ValidateFileHandle(Microsoft.Win32.SafeHandles.SafeFileHandle)
+-----------------------------------------------------------
+
+Time: 06-05-2022 11:28:13 AM
+-----------------------------------------------------------
+Message: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[BusinessEntity.WhatsAppEntity]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 3, position 1.
+StackTrace:    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: Newtonsoft.Json
+TargetSite: System.Object CreateObject(Newtonsoft.Json.JsonReader, System.Type, Newtonsoft.Json.Serialization.JsonContract, Newtonsoft.Json.Serialization.JsonProperty, Newtonsoft.Json.Serialization.JsonContainerContract, Newtonsoft.Json.Serialization.JsonProperty, System.Object)
+-----------------------------------------------------------
+
+Time: 06-05-2022 11:28:46 AM
+-----------------------------------------------------------
+Message: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[BusinessEntity.WhatsAppEntity]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path '', line 3, position 1.
+StackTrace:    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: Newtonsoft.Json
+TargetSite: System.Object CreateObject(Newtonsoft.Json.JsonReader, System.Type, Newtonsoft.Json.Serialization.JsonContract, Newtonsoft.Json.Serialization.JsonProperty, Newtonsoft.Json.Serialization.JsonContainerContract, Newtonsoft.Json.Serialization.JsonProperty, System.Object)
+-----------------------------------------------------------
+
+Time: 06-05-2022 11:54:27 AM
+-----------------------------------------------------------
+Message: Cannot deserialize the current JSON object (e.g. {"name":"value"}) into type 'System.Collections.Generic.List`1[BusinessEntity.LoginEntity]' because the type requires a JSON array (e.g. [1,2,3]) to deserialize correctly.
+To fix this error either change the JSON to a JSON array (e.g. [1,2,3]) or change the deserialized type so that it is a normal .NET type (e.g. not a primitive type like integer, not a collection type like an array or List<T>) that can be deserialized from a JSON object. JsonObjectAttribute can also be added to the type to force it to deserialize from a JSON object.
+Path 'phoneno', line 1, position 11.
+StackTrace:    at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateObject(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.CreateValueInternal(JsonReader reader, Type objectType, JsonContract contract, JsonProperty member, JsonContainerContract containerContract, JsonProperty containerMember, Object existingValue)
+   at Newtonsoft.Json.Serialization.JsonSerializerInternalReader.Deserialize(JsonReader reader, Type objectType, Boolean checkAdditionalContent)
+   at Newtonsoft.Json.JsonSerializer.DeserializeInternal(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonSerializer.Deserialize(JsonReader reader, Type objectType)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject(String value, Type type, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value, JsonSerializerSettings settings)
+   at Newtonsoft.Json.JsonConvert.DeserializeObject[T](String value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: Newtonsoft.Json
+TargetSite: System.Object CreateObject(Newtonsoft.Json.JsonReader, System.Type, Newtonsoft.Json.Serialization.JsonContract, Newtonsoft.Json.Serialization.JsonProperty, Newtonsoft.Json.Serialization.JsonContainerContract, Newtonsoft.Json.Serialization.JsonProperty, System.Object)
+-----------------------------------------------------------
+
+Time: 09-05-2022 08:54:37 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 206
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 09-05-2022 09:03:22 AM
+-----------------------------------------------------------
+Message: Object reference not set to an instance of an object.
+StackTrace:    at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 190
+Source: BusinessService
+TargetSite: System.String PostJsonToGivenUrl(System.String, BusinessEntity.LoginEntity)
+-----------------------------------------------------------
+
+Time: 09-05-2022 09:10:29 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 09-05-2022 09:23:04 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 09-05-2022 09:28:37 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 09-05-2022 10:05:10 AM
+-----------------------------------------------------------
+Message: The remote server returned an error: (400) .
+StackTrace:    at System.Net.HttpWebRequest.GetResponse()
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 262
+Source: System.Net.Requests
+TargetSite: System.Net.WebResponse GetResponse()
+-----------------------------------------------------------
+
+Time: 09-05-2022 10:15:42 AM
+-----------------------------------------------------------
+Message: The parent is missing.
+StackTrace:    at Newtonsoft.Json.Linq.JToken.Replace(JToken value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: Newtonsoft.Json
+TargetSite: Void Replace(Newtonsoft.Json.Linq.JToken)
+-----------------------------------------------------------
+
+Time: 09-05-2022 10:18:08 AM
+-----------------------------------------------------------
+Message: The parent is missing.
+StackTrace:    at Newtonsoft.Json.Linq.JToken.Replace(JToken value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject) in C:\Users\EMPULSE\source\repos\SEOYONAPI\BusinessService\LoginService.cs:line 252
+Source: Newtonsoft.Json
+TargetSite: Void Replace(Newtonsoft.Json.Linq.JToken)
+-----------------------------------------------------------
+
+Time: 09-05-2022 10:21:23 AM
+-----------------------------------------------------------
+Message: The parent is missing.
+StackTrace:    at Newtonsoft.Json.Linq.JToken.Replace(JToken value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: Newtonsoft.Json
+TargetSite: Void Replace(Newtonsoft.Json.Linq.JToken)
+-----------------------------------------------------------
+
+Time: 09-05-2022 10:22:43 AM
+-----------------------------------------------------------
+Message: The parent is missing.
+StackTrace:    at Newtonsoft.Json.Linq.JToken.Replace(JToken value)
+   at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: Newtonsoft.Json
+TargetSite: Void Replace(Newtonsoft.Json.Linq.JToken)
+-----------------------------------------------------------
+
+Time: 09-05-2022 10:23:26 AM
+-----------------------------------------------------------
+Message: Object reference not set to an instance of an object.
+StackTrace:    at BusinessService.LoginService.PostJsonToGivenUrl(String url, LoginEntity jsonObject)
+Source: BusinessService
+TargetSite: System.String PostJsonToGivenUrl(System.String, BusinessEntity.LoginEntity)
+-----------------------------------------------------------
+
